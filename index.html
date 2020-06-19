@@ -15,6 +15,11 @@
     <script src="style/js/bootstrap.min.js"></script>
 </head>
     <body>
+    <div class="loader-wrapper">
+      <span class="loader">     
+        <span class="loader-inner" > <img src="Plod2.1.png" class="slika"></span>
+      </span>
+    </div>
         <div class="col-12">
             <header class="row">
                 <div class="col-12 bg-blue py-2 d-md-block d-none">
@@ -404,6 +409,11 @@
                     </div>
                 </div>
             </footer>
+            <script type="text/javascript"> 
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
             <script src="https://cdn.snipcart.com/themes/v3.0.15/default/snipcart.js"></script>
         </div>
     </body>
